@@ -32,7 +32,9 @@ coupons = [
         v = product_hash[:count] / coupon_hash[:num]
         product_hash[:price] = coupon_hash[:cost] / v / product_hash[:count]
       elsif product_hash[:item] == coupon_hash[:item] && product_hash[:count] % coupon_hash[:num] != 0 && product_hash[:count] > 1
-        temp_hash = product_hash
+        temp_hash = {}
+        temp_hash = product_hash 
+        
         product_hash[:count] -=  1
         if product_hash[:item] == coupon_hash[:item] && product_hash[:count] % coupon_hash[:num] == 0 && product_hash[:count] > 1
           product_hash[:item] = "#{product_hash[:item]} W/COUPON"
