@@ -22,7 +22,7 @@ coupons = [
 ]
 
 
-def apply_coupons(cart, coupons)
+# def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   new_cart = consolidate_cart(cart)
    new_cart.clone.each do |product_hash|
@@ -53,7 +53,7 @@ def apply_coupons(cart, coupons)
 
   #
   # REMEMBER: This method **should** update cart
-end
+# end
 #
 
 # def apply_clearance(cart)
