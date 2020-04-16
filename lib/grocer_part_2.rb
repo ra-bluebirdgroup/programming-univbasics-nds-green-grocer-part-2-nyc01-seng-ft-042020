@@ -1,7 +1,7 @@
 require_relative './part_1_solution.rb'
 
 cart = [
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
+  # {:item => "AVOCADO", :price => 3.00, :clearance => true},
     {:item => "AVOCADO", :price => 3.00, :clearance => true},
     {:item => "AVOCADO", :price => 3.00, :clearance => true},
   {:item => "AVOCADO", :price => 3.00, :clearance => true},
