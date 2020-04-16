@@ -32,7 +32,8 @@ coupons = [
         v = product_hash[:count] / coupon_hash[:num]
         product_hash[:price] = coupon_hash[:cost] / v / product_hash[:count]
       elsif product_hash[:item] == coupon_hash[:item] && product_hash[:count] % coupon_hash[:num] == 0 + .5 && product_hash[:count] > 1
-       product_hash[item]
+        temp_array = [] 
+             temp_array << product_hash[item]
 
       end
 
