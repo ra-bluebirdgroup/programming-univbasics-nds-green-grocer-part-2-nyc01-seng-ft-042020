@@ -119,7 +119,7 @@ final_cart.each do |item|
   total  += item[:price]
 
    p total
- end
+ # end
 #   # BEFORE it begins the work of calculating the total (or else you might have
 #   # some irritated customers
 # end
