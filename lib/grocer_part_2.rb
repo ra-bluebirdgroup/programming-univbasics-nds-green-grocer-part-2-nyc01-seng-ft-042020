@@ -8,6 +8,12 @@ cart = [
     {:item => "AVOCADO", :price => 3.00, :clearance => true},
     {:item => "AVOCADO", :price => 3.00, :clearance => true},
   {:item => "AVOCADO", :price => 3.00, :clearance => true},
+  {:item => "AVOCADO", :price => 3.00, :clearance => true},
+  {:item => "AVOCADO", :price => 3.00, :clearance => true},
+  {:item => "AVOCADO", :price => 3.00, :clearance => true},
+    {:item => "AVOCADO", :price => 3.00, :clearance => true},
+    {:item => "AVOCADO", :price => 3.00, :clearance => true},
+  {:item => "AVOCADO", :price => 3.00, :clearance => true},
   {:item => "KALE", :price => 3.00, :clearance => false},
   {:item => "BLACK_BEANS", :price => 2.50, :clearance => false},
   {:item => "ALMONDS", :price => 9.00, :clearance => false},
@@ -52,14 +58,12 @@ coupons = [
 
     end
   end
-   new_cart.each.to_a
-   new_cart.each.sort
-   new_cart.each.to_h
+
    p new_cart
 
   #
   # REMEMBER: This method **should** update cart
-# end
+#end
 #
 
 # def apply_clearance(cart)
