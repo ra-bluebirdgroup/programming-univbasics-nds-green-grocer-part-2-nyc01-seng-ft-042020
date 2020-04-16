@@ -24,7 +24,7 @@ require_relative './part_1_solution.rb'
 #   {:item => "BEETS", :price => 2.50, :clearance => false},
 #   {:item => "SOY MILK", :price => 4.50, :clearance => true}
 # ]
-# 
+#
 # coupons = [
 #   {:item => "AVOCADO", :num => 3, :cost => 5.00},
 #    {:item => "BEER", :num => 2, :cost => 20.00},
