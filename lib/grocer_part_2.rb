@@ -47,8 +47,8 @@ coupons = [
   #       temp_hash = {}
   #       temp_hash.merge!(product_hash)
   #       temp_hash[:count] = 1
-  # 
-  # 
+  #
+  #
   #       product_hash[:count] -=  1
   #       if product_hash[:item] == coupon_hash[:item] && product_hash[:count] % coupon_hash[:num] == 0 && product_hash[:count] > 1
   #         product_hash[:item] = "#{product_hash[:item]} W/COUPON"
@@ -57,10 +57,10 @@ coupons = [
   #       end
   #       new_cart << temp_hash
   #     end
-  # 
+  #
   #   end
   # end
-  # 
+  #
   #  p new_cart
 
   #
@@ -111,11 +111,11 @@ end
 #   # * consolidate_cart
 #   # * apply_coupons
 #   # * apply_clearance
-consolidate_cart = consolidate_cart(cart) 
-couponed_cart = apply_coupons(consolidate_cart) 
- final_cart = apply_clearance(couponed_cart) 
- total = 0 
-final_cart.each do |item| 
+consolidate_cart = consolidate_cart(cart)
+couponed_cart = apply_coupons(consolidate_cart)
+ final_cart = apply_clearance(couponed_cart)
+ total = 0
+final_cart.each do |item|
   total  += item[:price]
 
    p total
