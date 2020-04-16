@@ -19,7 +19,7 @@ cart = [
   {:item => "ALMONDS", :price => 9.00, :clearance => false},
   {:item => "TEMPEH", :price => 3.00, :clearance => true},
   {:item => "CHEESE", :price => 6.50, :clearance => false},
-  {:item => "BEER", :price => 13.00, :clearance => false}, 
+  {:item => "BEER", :price => 13.00, :clearance => false},
     {:item => "BEER", :price => 13.00, :clearance => false},
       {:item => "BEER", :price => 13.00, :clearance => false},
   {:item => "PEANUTBUTTER", :price => 3.00, :clearance => true},
