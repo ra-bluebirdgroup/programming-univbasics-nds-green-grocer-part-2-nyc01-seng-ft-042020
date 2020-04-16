@@ -38,7 +38,7 @@ coupons = [
            product_hash[:item] = "#{product_hash[:item]} W/COUPON"
            product_hash[:count] - 1
            new_cart << store
-           
+
 
 
 
