@@ -99,6 +99,7 @@ cart.each do |item_hash|
   if item_hash[:clearance] == true
     item_hash[:price] -= item_hash[:price] * 0.2
   end
+end 
   cart
 #   # REMEMBER: This method **should** update cart
 end
