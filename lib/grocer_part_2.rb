@@ -33,7 +33,7 @@ coupons = [
   {:item => "CHEESE", :num => 3, :cost => 15.00}
 ]
 
-
+#alternative #apply_coupons
 # def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   # new_cart = consolidate_cart(cart)
@@ -91,7 +91,7 @@ def apply_coupons(cart, coupons)
    counter += 1
  end
  cart
- end 
+ end
 # def apply_clearance(cart)
 #   # Consult README for inputs and outputs
 #   #
