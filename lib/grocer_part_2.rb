@@ -35,7 +35,8 @@ coupons = [
         temp_hash = {}
         temp_hash.merge!(product_hash)
 
-        product_hash[:count] -=  1
+
+        temp_hash[:count] -=  1
         if product_hash[:item] == coupon_hash[:item] && product_hash[:count] % coupon_hash[:num] == 0 && product_hash[:count] > 1
           product_hash[:item] = "#{product_hash[:item]} W/COUPON"
           v = product_hash[:count] / coupon_hash[:num]
