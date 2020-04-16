@@ -33,28 +33,13 @@ coupons = [
         product_hash[:price] = coupon_hash[:cost] / v / product_hash[:count]
       elsif product_hash[:item] == coupon_hash[:item] && product_hash[:count] % coupon_hash[:num] != 0 && product_hash[:count] > 1
         temp_hash = product_hash
-        product_hash[:item] = "#{product_hash[:item]} W/COUPON"
         product_hash[:count] -=  1
-
-
-
-
-
-
-
-
-
-
-
-        temp_hash = {}
-             temp_hash[:item] = product_hash[:item]
-             product_hash.delete(:item)
-             if product_hash[:item] == coupon_hash[:item] && product_hash[:count] % coupon_hash[:num] == 0 && product_hash[:count] > 1
-               product_hash[:item_with_coupon_applied_name] = "#{product_hash[:item]} W/COUPON"
-               v = product_hash[:count] / coupon_hash[:num]
-               product_hash[:price] = coupon_hash[:cost] / v / product_hash[:count]
-                p "this!!!!!"
-              end
+        if product_hash[:item] == coupon_hash[:item] && product_hash[:count] % coupon_hash[:num] == 0 && product_hash[:count] > 1
+          product_hash[:item] = "#{product_hash[:item]} W/COUPON"
+          v = product_hash[:count] / coupon_hash[:num]
+          product_hash[:price] = coupon_hash[:cost] / v / product_hash[:count]
+        end
+        new_cart << temp_hash 
       end
 
     end
