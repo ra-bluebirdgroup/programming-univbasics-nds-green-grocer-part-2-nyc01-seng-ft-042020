@@ -100,7 +100,7 @@ cart.each do |item_hash|
     item_hash[:price] -= item_hash[:price] * 0.2
   end
 end
-  return cart
+cart
 #   # REMEMBER: This method **should** update cart
 end
 #
