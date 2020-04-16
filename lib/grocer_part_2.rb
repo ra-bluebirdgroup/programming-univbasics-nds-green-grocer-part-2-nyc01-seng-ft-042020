@@ -40,7 +40,7 @@ coupons = [
    new_cart.clone.each do |product_hash|
     coupons.each do |coupon_hash|
       if product_hash[:item] == coupon_hash[:item] && product_hash[:count] % coupon_hash[:num] == 0 && product_hash[:count] > 1
-        product_hash[:item] = "ITEM NAME W/COUPON" ##{product_hash[:item]}
+        product_hash[:item] = "#{product_hash[:item]} W/COUPON" ##{product_hash[:item]}
         v = product_hash[:count] / coupon_hash[:num]
         product_hash[:price] = coupon_hash[:cost] * v#/ v / product_hash[:count]
       elsif product_hash[:item] == coupon_hash[:item] && product_hash[:count] % coupon_hash[:num] != 0 && product_hash[:count] > 1
