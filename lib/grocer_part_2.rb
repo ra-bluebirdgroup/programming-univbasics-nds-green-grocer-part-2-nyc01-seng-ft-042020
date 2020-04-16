@@ -40,9 +40,7 @@ coupons = [
                v = product_hash[:count] / coupon_hash[:num]
                product_hash[:price] = coupon_hash[:cost] / v / product_hash[:count]
                 product_hash.merge!(temp_hash)
-                
-
-
+              end      
       end
 
     end
