@@ -52,7 +52,9 @@ coupons = [
 
     end
   end
-
+   new_cart.to_a 
+   new_cart.sort! 
+   new_cart.to_h
    p new_cart
 
   #
