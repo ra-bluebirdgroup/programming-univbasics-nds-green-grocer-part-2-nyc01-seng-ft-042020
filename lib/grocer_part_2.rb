@@ -49,7 +49,7 @@ def apply_coupons(cart, coupons)
     end
   end
 
-   p new_cart
+   return new_cart
 
   #
   # REMEMBER: This method **should** update cart
