@@ -34,7 +34,7 @@ coupons = [
       elsif product_hash[:item] == coupon_hash[:item] && product_hash[:count] % coupon_hash[:num] == Float && product_hash[:count] > 1
         temp_hash = {}
              temp_hash << product_hash[:item]
-             product_hash.delete(:item)
+             #product_hash.delete(:item)
              if product_hash[:item] == coupon_hash[:item] && product_hash[:count] % coupon_hash[:num] == 0 && product_hash[:count] > 1
                product_hash[:item_with_coupon_applied_name] = "#{product_hash[:item]} W/COUPON"
                v = product_hash[:count] / coupon_hash[:num]
