@@ -118,7 +118,7 @@ couponed_cart = apply_coupons(consolidate_cart, coupons)
 final_cart.each do |item|
   total  += item[:price]
  end
- p total
+ p total.round(2)
 #   # BEFORE it begins the work of calculating the total (or else you might have
 #   # some irritated customers
 # end
