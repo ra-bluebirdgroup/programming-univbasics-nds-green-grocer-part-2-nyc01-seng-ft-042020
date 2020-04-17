@@ -116,7 +116,7 @@ couponed_cart = apply_coupons(consolidate_cart, coupons)
  final_cart = apply_clearance(couponed_cart)
  total = 0
 final_cart.each do |item|
-  total  += item[:price].round
+  total  += item[:price].round(1)
 
    p total
  end
