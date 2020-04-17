@@ -121,7 +121,7 @@ final_cart.each do |item|
  end
 
  if total > 100
-   total -= total * 0.10
+   total -= (total * 0.10)
  end
 
 
