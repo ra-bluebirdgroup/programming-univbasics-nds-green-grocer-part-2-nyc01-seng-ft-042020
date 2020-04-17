@@ -104,7 +104,7 @@ cart
 #   # REMEMBER: This method **should** update cart
 end
 #
-# def checkout(cart, coupons)
+def checkout(cart, coupons)
 #   # Consult README for inputs and outputs
 #   #
 #   # This method should call
@@ -114,18 +114,18 @@ end
 consolidate_cart = consolidate_cart(cart)
 couponed_cart = apply_coupons(consolidate_cart, coupons)
  final_cart = apply_clearance(couponed_cart)
- total = 0
+
+total = 0
 final_cart.each do |item|
   total  += item[:price]
  end
- p total.round(2)
- total += 100
+
  if total > 100
    total -= total * 0.10
  end
 
 
-p total.round(2)
+total.round(2)
 #   # BEFORE it begins the work of calculating the total (or else you might have
 #   # some irritated customers
-# end
+end
