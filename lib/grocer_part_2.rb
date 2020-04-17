@@ -1,40 +1,5 @@
 require_relative './part_1_solution.rb'
-
-cart = [
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
-    {:item => "AVOCADO", :price => 3.00, :clearance => true},
-    {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
-    {:item => "AVOCADO", :price => 3.00, :clearance => true},
-    {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "KALE", :price => 3.00, :clearance => false},
-  {:item => "BLACK_BEANS", :price => 2.50, :clearance => false},
-  {:item => "ALMONDS", :price => 9.00, :clearance => false},
-  {:item => "TEMPEH", :price => 3.00, :clearance => true},
-  {:item => "CHEESE", :price => 6.50, :clearance => false},
-  {:item => "BEER", :price => 13.00, :clearance => false},
-    {:item => "BEER", :price => 13.00, :clearance => false},
-      {:item => "BEER", :price => 13.00, :clearance => false},
-  {:item => "PEANUTBUTTER", :price => 3.00, :clearance => true},
-  {:item => "BEETS", :price => 2.50, :clearance => false},
-  {:item => "SOY MILK", :price => 4.50, :clearance => true}
-]
-
-coupons = [
-  {:item => "AVOCADO", :num => 3, :cost => 5.00},
-   {:item => "BEER", :num => 2, :cost => 20.00},
-  {:item => "CHEESE", :num => 3, :cost => 15.00}
-]
-
-
-# def apply_coupons(cart, coupons)
+# def apply_coupons(cart, coupons) #this seems to work but not passing
   # Consult README for inputs and outputs
   # new_cart = consolidate_cart(cart)
   #  new_cart.clone.each do |product_hash|
@@ -62,13 +27,10 @@ coupons = [
   # end
   #
   #  p new_cart
-
-  #
-  # REMEMBER: This method **should** update cart
 # end
-#
+
 def apply_coupons(cart, coupons)
-  counter = 0
+  counter = 0 #passing but error no method >= for nil class
    while counter < coupons.length
      cart_item = find_item_by_name_in_collection(coupons[counter][:item], cart)
      couponed_item_name = "#{coupons[counter][:item]} W/COUPON"
@@ -94,23 +56,16 @@ def apply_coupons(cart, coupons)
  end
 
 def apply_clearance(cart)
-#   # Consult README for inputs and outputs
 cart.each do |item_hash|
   if item_hash[:clearance] == true
     item_hash[:price] -= item_hash[:price] * 0.2
   end
 end
 cart
-#   # REMEMBER: This method **should** update cart
+
 end
-#
+
 def checkout(cart, coupons)
-#   # Consult README for inputs and outputs
-#   #
-#   # This method should call
-#   # * consolidate_cart
-#   # * apply_coupons
-#   # * apply_clearance
 consolidate_cart = consolidate_cart(cart)
 couponed_cart = apply_coupons(consolidate_cart, coupons)
  final_cart = apply_clearance(couponed_cart)
@@ -126,6 +81,4 @@ final_cart.each do |item|
 
 
 total.round(2)
-#   # BEFORE it begins the work of calculating the total (or else you might have
-#   # some irritated customers
 end
