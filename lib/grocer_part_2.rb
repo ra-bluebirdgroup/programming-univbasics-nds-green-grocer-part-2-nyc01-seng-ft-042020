@@ -121,7 +121,9 @@ final_cart.each do |item|
  p total.round(2)
  total + 100
  if total > 100
-   total -= total * 0.10
+   total -= total * 0.10 
+ end 
+ 
 
 p total.round(2)
 #   # BEFORE it begins the work of calculating the total (or else you might have
