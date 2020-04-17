@@ -125,7 +125,7 @@ final_cart.each do |item|
  # end
 
 
-total.round
+total.round(2)
 #   # BEFORE it begins the work of calculating the total (or else you might have
 #   # some irritated customers
 end
